@@ -15,22 +15,4 @@ def calculate_score(difficulty, correct):
     else:
         return 0
     
-print(calculate_score("easy", True))       # 10
-print(calculate_score("MEDIUM", True))     # 20
-print(calculate_score("Hard", True))       # 30
-print(calculate_score("Easy", False))      # 0
 
-try:
-    calculate_score(10, True)
-except TypeError as error:
-    print(error)
-
-try:
-    calculate_score("Impossible", True)
-except ValueError as error:
-    print(error)
-
-try:
-    calculate_score("Easy", "yes")
-except TypeError as error:
-    print(error)
